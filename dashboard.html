@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from bsg2.net/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Dec 2022 02:27:33 GMT -->
+<head>
+	<title data-lang="dashboard"> Dashboard </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- IIMPORT FONTS -->
+	<link href="css/fonts.css" rel="stylesheet">
+
+	<!-- BOOTSTRAP CSS-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- CUSTOM  CSS-->
+	<link href="css/dasboard4e44.css?ver=1.3" rel="stylesheet">
+	<link href="css/animation.css" rel="stylesheet">
+	<link href="css/mobile-view4963.css?ver=1.1" rel="stylesheet">
+</head>
+
+<body>
+	<!-- NAV BAR START-->
+	<header class="navbar sticky-top  topbar">
+		<div style="display: flex;align-items: center;">
+			<a class="pc-only mode" href="index.html"> <img height="30" width="25"
+					src="icon/bsg-logo-only.png">BSG2.0</a>
+			<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+				data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<a href="#"><img height="40" src="icon/nav-drawer.png"></a>
+			</button>
+			<a class="mobile-only mode-2" href="index.html"> <img class="bsg-logo" height="35px" width="80px"
+					src="icon/bsg-logo-only.png">BSG2.0</a>
+		</div>
+		<div class="navbar-nav">
+			<div class="nav-item text-nowrap prof pc-only">
+				<a href="#"><img height="50" weight="50" src="icon/top-bar-logo.png"></a>
+			</div>
+			<div class="nav-item text-nowrap en">
+				<div class="dropdown">
+					<button class="btn lang-drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<a href="#"><img height="20" weight="20" src="icon/flags/en.png"><img height="20" weight="20"
+								src="icon/down.png"></a>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#"><img height="20" weight="20"
+									src="icon/flags/en.png"></a></li>
+						<li><a class="dropdown-item" href="#"><img height="20" weight="20"
+									src="icon/flags/ph.png"></a></li>
+						<li><a class="dropdown-item" href="#"><img height="20" weight="20"
+									src="icon/flags/ge.png"></a></li>
+						<li><a class="dropdown-item" href="#"><img height="20" weight="20"
+									src="icon/flags/ni.png"></a></li>
+						<li><a class="dropdown-item" href="#"><img height="20" weight="20"
+									src="icon/flags/pa.png"></a></li>
+						<li><a class="dropdown-item" href="#"><img height="20" weight="20"
+									src="icon/flags/in.png"></a></li>
+						<li><a class="dropdown-item" href="#"><img height="20" weight="20"
+									src="icon/flags/cn.png"></a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="nav-item text-nowrap pc-only">
+				<a class="tronscan" target="_blank" href="#"><img height="40" src="icon/top-tron-full.png"></a>
+			</div>
+			<div class="nav-item text-nowrap mobile-only">
+				<a class="tronscan" target="_blank" href="#"><img height="40" weight="40"
+						src="icon/top-tron-2.png"></a>
+			</div>
+			<!--<div class="nav-item text-nowrap">-->
+			<!--	<a class="twitter" target="_blank" href="#"><img height="40" weight="40"-->
+			<!--			src="./icon/top-twitter.png"></a>-->
+			<!--</div>-->
+			<!--<div class="nav-item text-nowrap">-->
+			<!--	<a class="discord" target="_blank" href="#"><img height="40" weight="40"-->
+			<!--			src="./icon/top-discord.png"></a>-->
+			<!--</div>-->
+			<div class="nav-item text-nowrap">
+                <a data-bs-toggle="modal" data-bs-target="#telegram-modal">
+                    <img height="40" weight="40" src="icon/top-telegram.png">
+                </a>
+            </div>
+			<div class="nav-item text-nowrap">
+				<a class="facebook" target="_blank" href="#"><img height="40" weight="40"
+						src="icon/top-facebook.png"></a>
+			</div>
+		</div>
+	</header>
+	
+	<!-- TELEGRAM MODAL START-->
+    <div class="modal fade" id="telegram-modal" tabindex="-1" aria-labelledby="telegram-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+            <div class="modal-content deposit-modal modal-blue">
+                <div class="modal-header mobile-only">
+                    <a href="#" class="modal-title-close" data-bs-dismiss="modal">
+                        <img src="icon/modal-close.png" width="10" height="15">
+                        <h5 class="modal-title" data-lang="telegram_group">Telegram Group</h5>
+                    </a>
+                </div>
+                <div class="pc-modal-view-withdraw">
+                    <div class="modal-header modal-withdraw">
+                        <a href="#" class="modal-title-close" data-bs-dismiss="modal">
+                            <img src="icon/modal-x.png" height="15">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="energy-body" style="text-align: center;">
+                        <div class="telegram-global" data-lang="telegram_global">
+                            Global Group
+                        </div>
+                        <div class="telegram-english" data-lang="telegram_english">
+                            English Group
+                        </div>
+                        <div class="telegram-chinese" data-lang="telegram_chinese">
+                            Chinese Group
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TELEGRAM MODAL END -->
+
+	<!-- INVITER CONFIRM -->
+	<div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-md">
+			<div class="modal-content deposit-modal register-bg">
+				<div class="modal-body register">
+					<div class="register-body">
+						<img src="icon/register.png">
+						<h3 data-lang="confirm_inviter">Confirm your Inviter</h3>
+						<p class="referAddr">...</p>
+						<div class="register-buttons">
+							<button class="register-cancel" data-bs-dismiss="modal" data-lang="cancel">Cancel</button>
+							<button class="register-confirm" data-lang="confirm">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- INVITER CONFIRM -->
+
+	<!-- DEPOSIT MODAL START-->
+	<div class="modal fade" id="deposit" tabindex="-1" aria-labelledby="deposit" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-violet">
+				<div class="pc-modal-view-withdraw">
+					<div class="modal-header modal-withdraw">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="modal-header mobile-only">
+					<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+						<img src="icon/modal-close.png" width="10" height="15">
+						<h5 class="modal-title" data-lang="deposit">Deposit</h5>
+					</a>
+				</div>
+				<div class="modal-body deposit-body-data">
+					<div class="deposit-body-data-input">
+						<input type="text" data-lang="deposit_placeholder" placeholder="Please input deposit amount"
+							class="inputAmount">
+						<div class="deposit-body-data-price">
+							<img src="icon/tron-currency.png" height="24">
+							<h3>USDT</h3>
+						</div>
+					</div>
+					<div class="deposit-body-data-text">
+						<p data-lang="deposit_rules1">Minimum deposit 100USDT. A ratio of 100 max 5000 USDT</p>
+					</div>
+					<div class="deposit-body-data-information">
+						<div class="deposit-body-data-computation">
+							<div>
+								<h3><span class="depositAmount">100</span>USDT</h3>
+								<p data-lang="deposit">Deposit</p>
+							</div>
+							<div>
+								<h3>+</h3>
+							</div>
+							<div>
+								<h3>22.5%</h3>
+								<p data-lang="deposit_rules2">Each Cycle</p>
+							</div>
+							<div>
+								<h3>=</h3>
+							</div>
+							<div>
+								<h3><span class="total">122.5</span>USDT</h3>
+								<p data-lang="deposit_rules3">Deposit and Reward</p>
+							</div>
+						</div>
+						<div class="deposit-body-data-summary">
+							<p data-lang="deposit_rules4">
+								15 days per cycle. 22.5% per cycle
+							</p>
+							<p data-lang="deposit_rules_new">
+								First cycle: max deposit 1000 <br> Second cycle: max deposit 2000 <br> Third cycle: max deposit 3000 <br> Fourth cycle: max deposit 4000 <br> Fifth cycle: max deposit 5000
+							</p>
+							<p data-lang="deposit_rules5">
+								You will have to redeposit every time each after each cycle. It will have to be
+								either the same amount or bigger amount. Every 1 cycle you deposit, 1 extra
+								days will be added without extra interest. Maximum 45 days.
+							</p>
+						</div>
+					</div>
+					<div class="deposit-body-data-button">
+						<button class="deposit-cancel" data-bs-dismiss="modal" data-lang="cancel">Cancel</button>
+						<button class="deposit-confirm" data-lang="confirm">Confirm</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- DEPOSIT MODAL START-->
+
+	<!-- WITHDRAW MODAL START-->
+	<div class="modal fade" id="withdraw" tabindex="-1" aria-labelledby="withdraw" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-blue">
+				<div class="pc-modal-view-withdraw">
+					<div class="modal-header modal-withdraw">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="mobile-modal-view-withdraw">
+					<div class="modal-header">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-close.png" width="10" height="15">
+							<h5 class="modal-title" data-lang="withdraw">Withdraw</h5>
+						</a>
+					</div>
+				</div>
+				<div class="modal-body withdraw-body-data">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="deposit-body-data-information">
+								<div class="withdraw-body-data-summary">
+									<div class="withdraw-values">
+										<h3 data-lang="principal">Unlock Principal</h3>
+										<h3><span class="unfreezed">0.00</span> USDT</h3>
+									</div>
+									<div class="withdraw-values">
+										<h3 data-lang="cycle_reward">Cycle Reward</h3>
+										<h3><span class="staticReward">0.00</span> USDT</h3>
+									</div>
+									<div class="withdraw-values">
+										<h3 data-lang="invite_reward">Level 1-4 Reward</h3>
+										<h3><span class="inviteReward">0.00</span> USDT</h3>
+									</div>
+									<div class="withdraw-values">
+										<div>
+											<h3 data-lang="level5_reward">Level 5 Reward</h3>
+											<p data-lang="level5_freezing">Freezing</p>
+
+										</div>
+										<div>
+											<h3><span class="level5Reward">0.00</span> USDT</h3>
+											<p class="freeze"><span class="level5Freezed">0.00</span> USDT</p>
+										</div>
+
+									</div>
+									<div class="withdraw-values">
+										<h3 data-lang="lucky_win">Lucky Reward</h3>
+										<h3><span class="luckReward">0.00</span> USDT</h3>
+									</div>
+									<div class="withdraw-values">
+										<h3 data-lang="lottery_win">Lottery Reward</h3>
+										<h3><span class="lotteryReward">0.00</span> USDT</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 withdraw-action">
+							<h3 data-lang="available_withdraw">Available Withdraw</h3>
+							<h3><span class="totalReward">0.00</span> USDT</h3>
+
+							<div class="withdraw-body-data-button">
+								<button class="withdraw-cancel" data-bs-dismiss="modal"
+									data-lang="cancel">Cancel</button>
+								<button class="withdraw-confirm" data-lang="withdraw"> Withdraw </button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- WITHDRAW MODAL START-->
+
+	<!-- SPLIT MODAL START-->
+	<div class="modal fade" id="split" tabindex="-1" aria-labelledby="split" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-light-blue">
+				<div class="modal-header mobile-only">
+					<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+						<img src="icon/modal-close.png" width="10" height="15">
+						<h5 class="modal-title" data-lang="split_account">Split Account</h5>
+					</a>
+				</div>
+				<div class="pc-modal-view-withdraw">
+					<div class="modal-header modal-withdraw">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="modal-body split-body-data">
+					<div class="row">
+						<div class="col-12 order-2 col-md-5 order-md-1" style="margin-top:10px">
+							<div class="available-ustd">
+								<p> <span data-lang="split_account">Split Available: </span><span> <span
+											class="splitAvailable">0.00</span> USDT </span></p>
+							</div>
+							<div class="splitDeposit">
+								<h3 data-lang="deposit">Deposit</h3>
+								<div class="split-body-data-input">
+									<p data-lang="amount">Amount</p>
+									<div class="deposit-body-data-input">
+										<input type="text" placeholder="Amount" class="splitDepositAmount">
+										<div class="deposit-body-data-price">
+											<img src="icon/tron-currency.png" height="24">
+											<h3>USDT</h3>
+										</div>
+									</div>
+									<p data-lang="split_ratio">The ratio of 100</p>
+								</div>
+								<div class="deposit-body-data-button">
+									<button class="split-deposit" data-lang="deposit">Deposit</button>
+								</div>
+							</div>
+
+							<div class="transfer">
+								<h3 data-lang="transfer">Transfer</h3>
+								<div class="split-body-data-input">
+									<p>USDT</p>
+									<select class="transferSelect">
+										<option value="0" data-lang="split_balance">Split Balance</option>
+										<option value="1" data-lang="lottery_balance">Lottery Balance</option>
+									</select>
+									<div class="split-body-data-price">
+										<input type="text" data-lang="receiver_placeholder"
+											placeholder="Receiver address" class="receiver">
+									</div>
+									<p data-lang="split_account">Amount</p>
+									<div class="deposit-body-data-input">
+										<input type="text" data-lang="amount_placeholder" placeholder="Transfer amount"
+											class="transferAmount">
+										<div class="deposit-body-data-price">
+											<img src="icon/tron-currency.png" height="24">
+											<h3>USDT</h3>
+										</div>
+									</div>
+									<p data-lang="fee_hint">10% will be burn for each transfer</p>
+								</div>
+								<div class="deposit-body-data-button">
+									<button class="split-transfer" data-lang="transfer">Transfer</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 order-1 col-md-7  order-md-2 bet-display" style="margin-top:10px">
+							<div class="available-ustd">
+								<p> <span data-lang="lottery_available">Lottery Available: </span> <span> <span
+											class="lotteryAvailable">0.00</span> USDT </span></p>
+							</div>
+							<div class="bet">
+								<h3> <span data-lang="lottery_title">Draw</span> <span class="lottery_times">1</span>
+								</h3>
+								<p data-lang="lottery_rules">Players joining BSG in the next 24 hours</p>
+								<div class="bet-inputs">
+									<input type="text" data-lang="guess_placeholder" placeholder="Guess a number"
+										class="lotteryNumber">
+									<button class="lottery-bet" data-lang="confirm">Confirm</button>
+								</div>
+								<div class="bet-history">
+									<h3 data-lang="bet_history"> Bet History</h3>
+									<div class="history-infos">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SPLIT MODAL START-->
+
+	<!-- ENERGY MODAL START-->
+	<div class="modal fade" id="energy" tabindex="-1" aria-labelledby="energy" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-violet">
+				<div class="modal-header mobile-only">
+					<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+						<img src="icon/modal-close.png" width="10" height="15">
+						<h5 class="modal-title" data-lang="energy_lend">Energy Lend</h5>
+					</a>
+				</div>
+				<div class="pc-modal-view-withdraw">
+					<div class="modal-header modal-withdraw">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div class="energy-body" style="text-align: center;">
+						<div>
+							<a href="https://www.tokengoodies.com/buy-energy" target="_blank">Token Goodies</a>
+						</div>
+						<div>
+							<a href="https://emarket.vip/" target="_blank">Energy Market</a>
+
+						</div>
+						<div>
+							<a href="https://www.diditron.com/" target="_blank">Didi Tron</a>
+
+						</div>
+						<div>
+							<a href="https://m.tronlending.org/tronLending/" target="_blank">Tron Lending</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ENERGY MODAL END -->
+
+	<!-- PLAYERS MODAL START-->
+	<div class="modal fade" id="player" tabindex="-1" aria-labelledby="player" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-pink">
+				<div class="pc-modal-view-player">
+					<div class="modal-header modal-player">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="mobile-modal-view-player">
+					<div class="modal-header">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-close.png" width="10" height="15">
+							<h5 class="modal-title" data-lang="players">Players</h5>
+						</a>
+					</div>
+				</div>
+				<div class="modal-body player-body-data">
+					<h3 data-lang="players_history"> Players History </h3>
+					<div class="player-history history-style"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- PLAYERS MODAL START-->
+
+	<!-- DAILY LUCKY POOL MODAL START-->
+	<div class="modal fade" id="daily-lucky-pool" tabindex="-1" aria-labelledby="daily-lucky-pool" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-light-blue">
+				<div class="pc-modal-view-player">
+					<div class="modal-header modal-player">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="mobile-modal-view-player">
+					<div class="modal-header">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-close.png" width="10" height="15">
+							<h5 class="modal-title" data-lang="lucky_pool">Daily Lucky Pool</h5>
+						</a>
+					</div>
+				</div>
+				<div class="modal-body player-body-data">
+					<h3 data-lang="lucky_history"> Daily Lucky Pool History </h3>
+					<div class="lucky-history history-style"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- DAILY LUCKY POOL MODAL START-->
+
+	<!-- LOTTERY MODAL START-->
+	<div class="modal fade" id="lottery-pool" tabindex="-1" aria-labelledby="lottery-pool" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-blue">
+				<div class="pc-modal-view-player">
+					<div class="modal-header modal-player">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="mobile-modal-view-player">
+					<div class="modal-header">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-close.png" width="10" height="15">
+							<h5 class="modal-title" data-lang="lottery_pool">Lottery Pool</h5>
+						</a>
+					</div>
+				</div>
+				<div class="modal-body player-body-data">
+					<h3 data-lang="lottery_history"> Daily Lottery Pool History </h3>
+					<div class="lottery-history history-style"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- LOTTERY MODAL START-->
+
+	<!-- TOTAL DEPOSIT MODAL START-->
+	<div class="modal fade" id="total-deposit" tabindex="-1" aria-labelledby="total-deposit" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
+			<div class="modal-content deposit-modal modal-violet">
+				<div class="pc-modal-view-player">
+					<div class="modal-header modal-player">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-x.png" height="15">
+						</a>
+					</div>
+				</div>
+				<div class="mobile-modal-view-player">
+					<div class="modal-header">
+						<a href="#" class="modal-title-close" data-bs-dismiss="modal">
+							<img src="icon/modal-close.png" width="10" height="15">
+							<h5 class="modal-title" data-lang="total_deposit">Total Deposit</h5>
+						</a>
+					</div>
+				</div>
+				<div class="modal-body player-body-data">
+					<h3 data-lang="deposit_history"> Daily Deposit History </h3>
+					<div class="deposits-history history-style"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  TOTAL DEPOSIT MODAL START-->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- SIDEBAR START-->
+			<nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse">
+				<div class="position-sticky pt-3 sidebar-sticky">
+					<div class="light-mode">
+						<p data-lang="display_mode">Light Mode</p>
+						<div class="form-check form-switch">
+							<input class="form-check-input switch" value="true" type="checkbox"
+								id="flexSwitchCheckDefault" checked>
+						</div>
+					</div>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link active" href="dashboard.html">
+								<span class="icon-sidebar"><img height="24" weight="24"
+										src="icon/nav-dashboard.png"></span>
+								<span data-lang="dashboard">Dashboard</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="myteam.html">
+								<span class="icon-sidebar"><img height="24" weight="24"
+										src="icon/nav-gray-team.png"></span>
+								<span data-lang="myteam">My Team</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="mydeposits.html">
+								<span class="icon-sidebar"><img height="24" weight="24"
+										src="icon/nav-gray-deposit-detail.png"></span>
+								<span data-lang="deposit_details">Deposit Details</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" target="_blank" href="docs/rules.pdf">
+								<span class="icon-sidebar"><img height="24" weight="24"
+										src="icon/nav-gray-rule.png"></span>
+								<span data-lang="rules">Rules</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- SIDEBAR  START-->
+
+			<!-- MAIN CONTENT  START-->
+			<main class="col-md-10 ms-sm-auto">
+				<div class="row">
+					<div class="col-md-8 main-dashboard">
+						<div class="welcome-dashboard-background">
+							<div class="background-dashboard">
+								<img src="icon/welcome-dashboard.png">
+							</div>
+							<div class="welcome-dashboard">
+								<a class="mode-2" href="index.html"
+									style="font-size: 20px;display: flex;align-items: center;font-weight: bold;"> <img
+										class="" height="30" width="25" src="icon/bsg-logo-only.png">BSG2.0</a>
+								<h3 data-lang="dashboard_title1">Welcome, Player!</h3>
+								<p data-lang="common_title1">Start playing and earn rewards</p>
+							</div>
+							<div class="main-detail">
+								<div class="row detail-group">
+									<div class="col-6 col-md-3 col col-detail">
+										<div class="detail">
+											<img src="icon/address.png" height="28" weight="28">
+											<span>
+												<div class="detail-title">
+													<h3 data-lang="contract_address">Contract Address</h3>
+												</div>
+												<p class="contractAddress">...</p>
+											</span>
+										</div>
+
+									</div>
+									<div class="col-6 col-md-3 col col-detail">
+										<div class="detail">
+											<img src="icon/wallet.png" height="28" weight="28">
+											<span>
+												<div class="detail-title">
+													<h3 data-lang="income">Income</h3>
+												</div>
+												<p data-lang="deposit_rules6">15 days per cycle. Monthly 45%</p>
+											</span>
+										</div>
+									</div>
+									<div class="col-6 col-md-3 col col-detail">
+										<div class="detail">
+											<img src="icon/running-time.png" height="28" weight="28">
+											<span>
+												<div class="detail-title">
+													<h3 data-lang="running_time">Platform Running Time</h3>
+												</div>
+												<p class="runningTime">00:00:00</p>
+											</span>
+										</div>
+									</div>
+									<div class="col-6 col-md-3 col col-detail">
+										<div class="detail">
+											<img src="icon/deposit-time.png" height="28" weight="28">
+											<span>
+												<div class="detail-title">
+													<h3 data-lang="deposit_time">Deposit Time</h3>
+												</div>
+												<p class="depositCountDown">00:00:00</p>
+											</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="main-daily-detail">
+								<div class="row detail-group">
+									<div class="col-6 col-md-3 col-daily-detail">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#player">
+											<img src="icon/daily-player.png">
+											<div class="daily-detail player">
+												<div class="daily-text">
+													<h3 data-lang="players"> Players </h3>
+													<h2 class="totalUsers"> 0 </h2>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-6 col-md-3 col-daily-detail">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#daily-lucky-pool">
+											<img src="icon/daily-wallet-with-cash.png">
+											<div class="daily-detail lucky">
+												<div class="daily-text">
+													<h3 data-lang="lucky_pool"> Daily Lucky Pool </h3>
+													<h2 class="luckPool"> 0 </h2>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-6 col-md-3 col-daily-detail">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#lottery-pool">
+											<img src="icon/daily-coins.png">
+											<div class="daily-detail star">
+												<div class="daily-text">
+													<h3 data-lang="lottery_pool"> Lottery Pool </h3>
+													<h2 class="lotteryPool"> 0 </h2>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-6 col-md-3 col-daily-detail">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#energy">
+											<img src="icon/lend-energy.png">
+											<div class="daily-detail top3">
+												<div class="daily-text">
+													<h3 data-lang="energy_lend" style="margin-bottom: 15%">Energy Lend</h3>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+
+							</div>
+							<div class="main-account-detail">
+								<div class="row">
+									<div class="col-md-4">
+										<a href="#" data-bs-toggle="modal" data-bs-target="#deposit">
+											<div class="col-md-12 account-detail top3">
+												<span class="account-detail-action">
+													<img src="icon/detail-deposit.png" class="deposit">
+												</span>
+												<h3 data-lang="deposit">Deposit</h3>
+											</div>
+										</a>
+										<a href="#" data-bs-toggle="modal" data-bs-target="#withdraw">
+											<div class="col-md-12 account-detail star">
+												<span class="account-detail-action">
+													<img src="icon/detail-withraw.png">
+												</span>
+												<h3 data-lang="withdraw">Withdraw</h3>
+											</div>
+										</a>
+										<a href="#" data-bs-toggle="modal" data-bs-target="#split">
+											<div class="col-md-12 account-detail lucky">
+												<span class="account-detail-action">
+													<img src="icon/detail-group.png">
+												</span>
+												<h3 data-lang="split_acount">Split & Lottery Account</h3>
+											</div>
+										</a>
+										<!-- <a href="#" data-bs-toggle="modal" data-bs-target="#energy">
+											<div class="col-md-12 account-detail pink">
+												<span class="account-detail-action">
+													<img src="./icon/detail-lend.png">
+												</span>
+												<h3 data-lang="energy_lend">Energy Lend</h3>
+											</div>
+										</a> -->
+									</div>
+
+									<div class="col-md-8 sm-mt">
+										<a href="#">
+											<div class="row" style="padding-right: 8px;">
+												<div class="col-md-12 reward-detail">
+													<div class="row reward-text">
+														<div class="col-md-12 lucky-detail">
+															<h3 data-lang="lucky_reward">Distribute Reward</h3>
+															<h4 data-lang="time_remaining">Time Remaining: </h4>
+														</div>
+													</div>
+													<div class="timer">
+														<div>
+															<h1><span class="hourStart0">0</span><span
+																	class="hourEnd0">0</span></h1>
+														</div>
+														<div>
+															<h1><span class="minuteStart0">0</span><span
+																	class="minuteEnd0">0</span></h1>
+														</div>
+														<div>
+															<h1><span class="secondStart0">0</span><span
+																	class="secondEnd0">0</span></h1>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+										</a>
+										<a href="#">
+											<div class="row" style="padding-right: 8px;">
+												<div class="col-md-12 reward-detail">
+													<div class="row reward-text">
+														<div class="col-md-12 lucky-detail">
+															<h3 data-lang="lottery_reward">Joining Lottery</h3>
+															<h4 data-lang="time_remaining">Time Remaining: </h4>
+														</div>
+													</div>
+													<div class="timer">
+														<div>
+															<h1><span class="hourStart1">0</span><span
+																	class="hourEnd1">0</span></h1>
+														</div>
+														<div>
+															<h1><span class="minuteStart1">0</span><span
+																	class="minuteEnd1">0</span></h1>
+														</div>
+														<div>
+															<h1><span class="secondStart1">0</span><span
+																	class="secondEnd1">0</span></h1>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="main-latest-despositor">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="main-latest-despositor-text">
+											<h3 data-lang="latest_depositors">Latest Depositors</h3>
+										</div>
+										<div class="main-latest-despositor-data">
+											<table class="table depositorsTable" style="text-align: center;">
+												<thead>
+													<tr>
+														<th scope="col" data-lang="address">Address</th>
+														<th scope="col" data-lang="time">Time</th>
+														<th scope="col" data-lang="amount">Amount</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Null</td>
+														<td>Null</td>
+														<td>
+															<div class='main-latest-despositor-data-amount'>
+																<img src='icon/tron-currency.png' height='24'>
+																<h3>0</h3>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>Null</td>
+														<td>Null</td>
+														<td>
+															<div class='main-latest-despositor-data-amount'>
+																<img src='icon/tron-currency.png' height='24'>
+																<h3>0</h3>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>Null</td>
+														<td>Null</td>
+														<td>
+															<div class='main-latest-despositor-data-amount'>
+																<img src='icon/tron-currency.png' height='24'>
+																<h3>0</h3>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 ms-sm-auto main-side-detail">
+						<div class="row">
+							<div class="main-side-detail-wrapper">
+								<div class="col-md-12 level-mobile">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="side-detail-level-text">
+												<h3 class="night-mode-font-color-mobile-h3" data-lang="my_level">My
+													Level</h3>
+											</div>
+											<a href="#">
+												<div class="side-detail-level-data">
+													<div>
+														<img class="level" width="40">
+														<img class="level" width="40">
+														<img class="level" width="40">
+														<img class="level" width="40">
+														<img class="level" width="40">
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="row" style="margin-top: 20px">
+										<!-- <div class="col-md-12">                 
+													<div class="side-detail-balance">
+														<p class="night-mode-font-color-mobile" data-lang="conBal">合约余额</p>
+														<h3 class="night-mode-font-color-mobile-h3 conBal">0.00</h3>
+													</div>
+												</div> -->
+										<div class="col-md-12">
+											<div class="side-detail-balance">
+												<p class="night-mode-font-color-mobile" data-lang="income">Income</p>
+												<h3 class="night-mode-font-color-mobile-h3 totalRevenue">0.00</h3>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="side-detail-balance">
+												<p class="night-mode-font-color-mobile" data-lang="trx_balance">TRX
+													Balance</p>
+												<h3 class="night-mode-font-color-mobile-h3 trxBal">0.00</h3>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="side-detail-balance">
+												<p class="night-mode-font-color-mobile" data-lang="usdt_balance">USDT
+													Balance</p>
+												<h3 class="night-mode-font-color-mobile-h3 usdtBal">0.00</h3>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="side-detail-balance">
+												<p class="night-mode-font-color-mobile" data-lang="my_referral">My
+													Referral</p>
+												<h3 class="night-mode-font-color-mobile-h3 myReferral">...</h3>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="side-detail-balance">
+												<p class="night-mode-font-color-mobile"><span
+														data-lang="referral_link">Referral Link</span> <input
+														class="referral-link" value="..." /></p>
+												<button class="copyLink">Copy</button>
+											</div>
+										</div>
+									</div>
+									<div class="row" style="margin-top: 20px">
+										<div class="col-md-12 lotteryWinners">
+											<div class="side-detail-top-player-title">
+												<h3 data-lang="lottery_winner">Lottery Winner</h3>
+											</div>
+											<div class="lotter-values">
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>1</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>2</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>3</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>4</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>5</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>6</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>7</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>8</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>9</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p>10</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+									</div>
+									<div class="row" style="margin-top: 20px">
+										<div class="col-md-12 luckyPlayers">
+											<div class="side-detail-top-player-title">
+												<h3 data-lang="lucky_player">Lucky Player</h3>
+											</div>
+											<div class="luck-player-values">
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">1</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">2</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">3</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">4</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">5</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">6</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">7</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">8</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">9</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+
+												<a href="#">
+													<div class="side-detail-top-player">
+														<div class="top-player-wrapper-name">
+															<p class="p-color">10</p>
+															<h3>Null</h3>
+														</div>
+														<div class="top-player-wrapper-price">
+															<img src="icon/tron-currency.png" height="24">
+															<h3>0.00</h3>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- MAIN CONTENT  END-->
+		</div>
+	</div>
+	<div class="footer">
+		<h1 data-lang="footer">© 2022 BSG. All rights reserved</h1>
+	</div>
+
+	<script src="js/bootstrap.min.bundle.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.i18n.properties.min.js"></script>
+	<script src="js/layer/layer.js"></script>
+	<script src="js/abis/erc20.js"></script>
+	<script src="js/abis/bsg2.js"></script>
+    <script src="js/commond5f7.js?ver=2.0"></script>
+	<script src="js/dashboard6de8.js?ver=3.3"></script>
+</body>
+
+
+<!-- Mirrored from bsg2.net/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Dec 2022 02:27:43 GMT -->
+</html>
